@@ -1,0 +1,3 @@
+import os
+
+TELEGRAM_BOT_TOKEN = os.getenv("ALERIA_CHAT_BOT_TELEGRAM_TOKEN")
