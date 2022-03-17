@@ -8,4 +8,4 @@ class DataBase:
     PASSWORD = os.getenv("ALERIA_DATABASE_PASSWORD")
     HOST = os.getenv("ALERIA_DATABASE_HOST")
     PORT = os.getenv("ALERIA_DATABASE_PORT")
-    DATABASE = os.getenv("ALERIA_DATABASE_DATABASE")
+    DATABASE = os.getenv("ALERIA_DATABASE_DB")
