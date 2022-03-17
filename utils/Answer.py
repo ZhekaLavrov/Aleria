@@ -7,8 +7,8 @@ from utils.Attachment import Attachment
 class Answer(object):
     def __init__(self, data):
         self._answer_id = data[0]
-        self.question_id = data[1]
-        self.answer_text = data[2]
+        self._question_id = data[1]
+        self.answer_text = str(data[2]).replace("|||", "\n")
         self.buttons = self.get_buttons()
         self.attachments = self.get_attachments()
 

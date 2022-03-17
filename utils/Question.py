@@ -19,21 +19,3 @@ class Question(object):
         if answer is not None:
             answer = Answer(answer)
         return answer
-
-
-def test():
-    from utils import create_connection
-    connection = create_connection()
-    try:
-        db = DB(connection)
-        questions = db.get_questions()
-    finally:
-        connection.close()
-
-    for question in questions:
-        question = Question(question)
-        print(type(question.questions))
-
-
-if __name__ == '__main__':
-    test()
